@@ -1,0 +1,22 @@
+﻿{
+  "applications": {
+    "Acme.MinhTai.BookStore.HttpApi.Host": {
+      "type": "dotnet-project",
+      "launchUrl": "https://localhost:44381",
+      "path": "../../../src/Acme.MinhTai.BookStore.HttpApi.Host/Acme.MinhTai.BookStore.HttpApi.Host.csproj",
+      "kubernetesService": ".*-httpapihost$",
+      "execution": {
+        "order": 4
+      }
+    },
+    "Acme.MinhTai.BookStore.Blazor": {
+      "type": "dotnet-project",
+      "launchUrl": "https://localhost:44359",
+      "path": "../../../src/Acme.MinhTai.BookStore.Blazor/Acme.MinhTai.BookStore.Blazor.csproj",
+      "kubernetesService": ".*-blazor$",
+      "execution": {
+        "order": 2
+      }
+    }
+  }
+}

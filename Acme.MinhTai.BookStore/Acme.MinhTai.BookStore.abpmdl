@@ -1,0 +1,97 @@
+{
+  "template": "app",
+  "imports": {
+    "Volo.Abp.LeptonXLiteTheme": {
+      "version": "3.3.3",
+      "isInstalled": true
+    },
+    "Volo.Abp.Account": {
+      "version": "8.3.3",
+      "isInstalled": true
+    },
+    "Volo.Abp.OpenIddict": {
+      "version": "8.3.3",
+      "isInstalled": true
+    },
+    "Volo.Abp.Identity": {
+      "version": "8.3.3",
+      "isInstalled": true
+    },
+    "Volo.Abp.TenantManagement": {
+      "version": "8.3.3",
+      "isInstalled": true
+    }
+  },
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {}
+    }
+  },
+  "packages": {
+    "Acme.MinhTai.BookStore.Application": {
+      "path": "src/Acme.MinhTai.BookStore.Application/Acme.MinhTai.BookStore.Application.abppkg",
+      "folder": "src"
+    },
+    "Acme.MinhTai.BookStore.Application.Tests": {
+      "path": "test/Acme.MinhTai.BookStore.Application.Tests/Acme.MinhTai.BookStore.Application.Tests.abppkg",
+      "folder": "test"
+    },
+    "Acme.MinhTai.BookStore.Domain.Shared": {
+      "path": "src/Acme.MinhTai.BookStore.Domain.Shared/Acme.MinhTai.BookStore.Domain.Shared.abppkg",
+      "folder": "src"
+    },
+    "Acme.MinhTai.BookStore.Application.Contracts": {
+      "path": "src/Acme.MinhTai.BookStore.Application.Contracts/Acme.MinhTai.BookStore.Application.Contracts.abppkg",
+      "folder": "src"
+    },
+    "Acme.MinhTai.BookStore.HttpApi": {
+      "path": "src/Acme.MinhTai.BookStore.HttpApi/Acme.MinhTai.BookStore.HttpApi.abppkg",
+      "folder": "src"
+    },
+    "Acme.MinhTai.BookStore.HttpApi.Client": {
+      "path": "src/Acme.MinhTai.BookStore.HttpApi.Client/Acme.MinhTai.BookStore.HttpApi.Client.abppkg",
+      "folder": "src"
+    },
+    "Acme.MinhTai.BookStore.EntityFrameworkCore.Tests": {
+      "path": "test/Acme.MinhTai.BookStore.EntityFrameworkCore.Tests/Acme.MinhTai.BookStore.EntityFrameworkCore.Tests.abppkg",
+      "folder": "test"
+    },
+    "Acme.MinhTai.BookStore.EntityFrameworkCore": {
+      "path": "src/Acme.MinhTai.BookStore.EntityFrameworkCore/Acme.MinhTai.BookStore.EntityFrameworkCore.abppkg",
+      "folder": "src"
+    },
+    "Acme.MinhTai.BookStore.TestBase": {
+      "path": "test/Acme.MinhTai.BookStore.TestBase/Acme.MinhTai.BookStore.TestBase.abppkg",
+      "folder": "test"
+    },
+    "Acme.MinhTai.BookStore.Domain.Tests": {
+      "path": "test/Acme.MinhTai.BookStore.Domain.Tests/Acme.MinhTai.BookStore.Domain.Tests.abppkg",
+      "folder": "test"
+    },
+    "Acme.MinhTai.BookStore.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/Acme.MinhTai.BookStore.HttpApi.Client.ConsoleTestApp/Acme.MinhTai.BookStore.HttpApi.Client.ConsoleTestApp.abppkg",
+      "folder": "test"
+    },
+    "Acme.MinhTai.BookStore.DbMigrator": {
+      "path": "src/Acme.MinhTai.BookStore.DbMigrator/Acme.MinhTai.BookStore.DbMigrator.abppkg",
+      "folder": "src"
+    },
+    "Acme.MinhTai.BookStore.HttpApi.Host": {
+      "path": "src/Acme.MinhTai.BookStore.HttpApi.Host/Acme.MinhTai.BookStore.HttpApi.Host.abppkg",
+      "folder": "src"
+    },
+    "Acme.MinhTai.BookStore.Blazor": {
+      "path": "src/Acme.MinhTai.BookStore.Blazor/Acme.MinhTai.BookStore.Blazor.abppkg",
+      "folder": "src"
+    },
+    "Acme.MinhTai.BookStore.Blazor.Client": {
+      "path": "src/Acme.MinhTai.BookStore.Blazor.Client/Acme.MinhTai.BookStore.Blazor.Client.abppkg",
+      "folder": "src"
+    },
+    "Acme.MinhTai.BookStore.Domain": {
+      "path": "src/Acme.MinhTai.BookStore.Domain/Acme.MinhTai.BookStore.Domain.abppkg",
+      "folder": "src"
+    }
+  }
+}
