@@ -14,6 +14,7 @@ using Volo.Abp.SettingManagement.EntityFrameworkCore;
 using Volo.Abp.OpenIddict.EntityFrameworkCore;
 using Volo.Abp.TenantManagement;
 using Volo.Abp.TenantManagement.EntityFrameworkCore;
+using Acme.MinhTai.BookStore.Books;
 
 namespace Acme.MinhTai.BookStore.EntityFrameworkCore;
 
@@ -54,6 +55,7 @@ public class BookStoreDbContext :
     // Tenant Management
     public DbSet<Tenant> Tenants { get; set; }
     public DbSet<TenantConnectionString> TenantConnectionStrings { get; set; }
+    public DbSet<Book> Books { get; set; }
 
     #endregion
 
@@ -78,8 +80,16 @@ public class BookStoreDbContext :
         builder.ConfigureOpenIddict();
         builder.ConfigureTenantManagement();
         builder.ConfigureBlobStoring();
-        
+
         /* Configure your own tables/entities inside here */
+
+        builder.Entity<Book>(b =>
+        {
+            b.ToTable(BookStoreConsts.DbTablePrefix + "Books",
+                BookStoreConsts.DbSchema);
+            b.ConfigureByConvention(); 
+            b.Property(x => x.Name).IsRequired().HasMaxLength(128);
+        });
 
         //builder.Entity<YourEntity>(b =>
         //{
