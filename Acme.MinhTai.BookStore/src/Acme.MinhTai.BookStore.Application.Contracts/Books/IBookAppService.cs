@@ -15,6 +15,6 @@ namespace Acme.MinhTai.BookStore.Books
          PagedAndSortedResultRequestDto,
          CreateUpdateBookDto>
     {
-
+        Task<ListResultDto<AuthorLookupDto>> GetAuthorLookupAsync();
     }
 }
