@@ -1,3 +1,4 @@
+using Acme.MinhTai.BookStore.Authors;
 using Acme.MinhTai.BookStore.Books;
 using AutoMapper;
 
@@ -10,5 +11,6 @@ public class BookStoreBlazorAutoMapperProfile : Profile
         //Define your AutoMapper configuration here for the Blazor project.
 
         CreateMap<BookDto, CreateUpdateBookDto>();
+
     }
 }
