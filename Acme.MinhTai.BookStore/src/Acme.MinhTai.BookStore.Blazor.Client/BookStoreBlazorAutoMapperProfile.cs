@@ -12,5 +12,6 @@ public class BookStoreBlazorAutoMapperProfile : Profile
 
         CreateMap<BookDto, CreateUpdateBookDto>();
 
+        CreateMap<AuthorDto, UpdateAuthorDto>();
     }
 }

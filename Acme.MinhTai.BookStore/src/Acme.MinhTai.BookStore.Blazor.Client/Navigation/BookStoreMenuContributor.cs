@@ -58,12 +58,22 @@ public class BookStoreMenuContributor : IMenuContributor
         context.Menu.AddItem(bookStoreMenu);
 
         //CHECK the PERMISSION
+        // books
         if (await context.IsGrantedAsync(BookStorePermissions.Books.Default))
         {
             bookStoreMenu.AddItem(new ApplicationMenuItem(
                 "BooksStore.Books",
                 l["Menu:Books"],
                 url: "/books"
+            ));
+        }
+        // authors
+        if (await context.IsGrantedAsync(BookStorePermissions.Authors.Default))
+        {
+            context.Menu.AddItem(new ApplicationMenuItem(
+                "BooksStore.Authors",
+                l["Menu:Authors"],
+                url: "/authors"
             ));
         }
     }
